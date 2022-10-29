@@ -2,5 +2,15 @@
     "name": "Breakthrough_Twitter",
     "version": "1.0",
     "description": "Breakthrough Twitter's Login Popup",
-    "manifest_version": 2
+    "manifest_version": 3,
+    "author": "Leaf",
+    "icons": {
+        "128": "icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://twitter.com/*"],
+            "js": ["content.js"]
+        }
+    ]
 }
